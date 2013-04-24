@@ -1,9 +1,35 @@
 .container {
   margin: 20px auto;
-  width: 600px;
+  width: 800px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
 th {
   text-align: left;
+}
+
+div { border: solid black 1px;
+    vertical-align: middle;
+    background-color: blue;
+    position: relative;
+  }
+
+h1 {
+  text-align: center;
+}
+
+img {float:left;
+
+}
+
+#main {
+  margin-left: 20px;
+  padding-left: 20px;
+  background-color: yellow;
+}
+
+form { background-color: green;
+  position: relative;
+  width: 200px;
+  float: left;
 }

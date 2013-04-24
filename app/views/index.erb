@@ -1,23 +1,29 @@
-<div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+<body>
+  <div>
+    <h1>Booyakasha!</h1>
+  </div>
+  <h3>This is meh websaight about how me don't believe in teck-mology.</h3>
+  <br>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
-</div>
+  <div id="main">
+    <img src="http://25.media.tumblr.com/tumblr_mecyx6kwiv1r1kwjdo1_400.jpg">
+    <form action='/cool_url' method='get'>
+      <input type="submit" value="click here to go to cool_url">
+    </form>
+ <!--    <br>
+    <br>
+    <br> -->
+    <form action="/cool_url" method="post">
+      Enter some text to submit to cool_url:
+      <input type="text" name="user_input">
+      <br>
+      <textarea cols="20" rows="5" wrap=virtual name="longtext">Enter some text here</textarea>
+      Enter some shit here:
+      <input type="text" name="post[title]">
+      Enter moar shit
+      <input type="text" name="post[price]">
+      <textarea name="post[description]"></textarea>
+      <input type="submit">
+    </form>
+  </div>
+</body>
